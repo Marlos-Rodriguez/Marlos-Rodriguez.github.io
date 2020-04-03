@@ -13,8 +13,10 @@
     />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body class="bg-ligth">
+  <body class="bg-white">
+    <!-- Header -->
     <header>
+      <!-- Navbar -->
       <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
         <a class="navbar-brand" href="#">Marlos Rodriguez</a>
         <button
@@ -65,6 +67,8 @@
       </nav>
     </header>
 
+    <!-- Carousel -->
+
     <main role="main" class="bg-light pb-5">
       <div
         id="carouselExampleCaptions"
@@ -83,10 +87,9 @@
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img
-              loading="lazy"
               src="./Images/Frontend-setup.jpeg"
               class="d-block w-100"
-              style="max-height: 660px;"
+              style="max-height: 660px; min-height: 230px;"
             />
             <div class="carousel-caption d-none d-md-block">
               <a class="h5 navbar-brand text-light" href="./web_programmer.html"
@@ -100,10 +103,9 @@
           </div>
           <div class="carousel-item">
             <img
-              loading="lazy"
               src="./Images/Game-programmer.jpg"
               class="d-block w-100"
-              style="max-height: 660px;"
+              style="max-height: 660px; min-height: 230px;"
             />
             <div class="carousel-caption d-none d-md-block">
               <a
@@ -119,10 +121,9 @@
           </div>
           <div class="carousel-item">
             <img
-              loading="lazy"
               src="./Images/Sobre-mi.jpg"
               class="d-block w-100"
-              style="max-height: 660px;"
+              style="max-height: 660px; min-height: 230px;"
             />
 
             <div class="carousel-caption d-none d-md-block">
@@ -156,12 +157,12 @@
         </a>
       </div>
 
-      <!--Container Marketing-->
+      <!--3 Intro Cards -->
 
       <div class="container mt-5 mx-auto marketing">
         <div class="row">
           <div class="col-lg-4 mb-3">
-            <div class="card zoom" style="width: 18rem;">
+            <div class="card zoom shadow" style="width: 18rem;">
               <img
                 loading="lazy"
                 src="./Images/bootstrap-Page.png"
@@ -196,7 +197,7 @@
             </div>
           </div>
           <div class="col-lg-4 mb-3">
-            <div class="card zoom" style="width: 18rem;">
+            <div class="card zoom shadow" style="width: 18rem;">
               <img
                 loading="lazy"
                 src="./Images/Sweet page.png"
@@ -233,7 +234,7 @@
             </div>
           </div>
           <div class="col-lg-4 mb-3">
-            <div class="card zoom" style="width: 18rem;">
+            <div class="card zoom shadow" style="width: 18rem;">
               <img
                 loading="lazy"
                 src="./Images/Weather app.png"
@@ -272,11 +273,15 @@
           </div>
         </div>
 
+        <!-- Cards -->
+
+        <!-- React /  Firebase Card -->
+
         <hr class="featurette-divider" />
-        <div class="card mb-3 zoom">
+        <div class="card shadow mb-3 zoom">
           <div class="row no-gutters">
             <div class="col-md-7 my-auto">
-              <div class="card-body ">
+              <div class="card-body">
                 <h2 class="card-title">Chat Web con React y Firebase</h2>
                 <p class="card-text lead">
                   Esta es una Aplicacion web de un Chat construido con React Js
@@ -307,13 +312,16 @@
                 src="./Images/React-Chat.png"
                 alt=""
                 class="card-img"
-                style="width: 100%; max-width:500px"
+                style="width: 100%; max-width: 500px;"
               />
             </div>
           </div>
         </div>
         <hr class="featurette-divider my-5" />
-        <div class="card zoom">
+
+        <!-- Open Library React Card -->
+
+        <div class="card shadow zoom">
           <div class="row featurette m-2 no-gutters">
             <div class="col-md-7 order-md-2 my-auto">
               <div class="card-body">
@@ -343,12 +351,12 @@
                 </p>
               </div>
             </div>
-            <div class="col-md-5 order-md-1 card-img ">
+            <div class="col-md-5 order-md-1 card-img">
               <img
                 loading="lazy"
                 class="card-img"
                 src="./Images/Openlibrary-React.png"
-                style=" width: 100%; max-width:500px"
+                style="width: 100%; max-width: 500px;"
               />
             </div>
           </div>
@@ -356,7 +364,9 @@
 
         <hr class="featurette-divider my-5" />
 
-        <div class="card zoom">
+        <!-- React Task Card -->
+
+        <div class="card shadow zoom">
           <div class="row featurette">
             <div class="col-md-7 my-auto ml-0">
               <div class="card-body">
@@ -393,7 +403,7 @@
                 class="card-img"
                 src="./Images/Task-React.png"
                 alt=""
-                style="width: 100%; max-width:500px"
+                style="width: 100%; max-width: 500px;"
               />
             </div>
           </div>
@@ -401,6 +411,7 @@
       </div>
     </main>
     <hr class="my-0 featurette-divider" />
+    <!-- Footer -->
     <footer
       id="footer-class"
       class="container page-footer font-small blue pt-4"
@@ -408,6 +419,7 @@
       <p class="float-right my-auto"><a href="#">Back to top</a></p>
       <div class="row featurette">
         <div class="col-md-3">
+          <!-- Contacto -->
           <h4>Contacto</h4>
           <ul class="list-unstyled list-group list-group-flush">
             <li class="list-group-item">
@@ -431,8 +443,22 @@
               >
             </li>
             <li class="list-group-item">
-              <span class="navbar-brand text-dark" style="font-size: 1rem;"
-                >Email: Marlos2811@hotmail.com</span
+              <a
+                href="https://www.linkedin.com/in/marlos-rodriguez-7268481a2/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="navbar-brand text-dark"
+                style="font-size: 1rem;"
+                >LinkedIn</a
+              >
+            </li>
+            <li class="list-group-item">
+              <a
+                href="mailto:Marlos2811@hotmail.com"
+                rel="noopener noreferrer"
+                class="navbar-brand text-dark"
+                style="font-size: 1rem;"
+                >Email</a
               >
             </li>
             <li class="list-group-item">
@@ -447,6 +473,7 @@
             </li>
           </ul>
         </div>
+        <!-- Enlaces -->
         <div class="col-md-3 offset-1">
           <ul class="list-unstyled list-group list-group-flush">
             <h4>Enlaces</h4>

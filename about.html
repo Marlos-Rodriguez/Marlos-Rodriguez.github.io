@@ -11,6 +11,7 @@
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
+    <script src="https://unpkg.com/scrollreveal"></script>
   </head>
   <body>
     <header>
@@ -82,12 +83,12 @@
 
     <main role="main" class="bg-light py-2">
       <div
-        style="margin: 3rem 8rem 3rem 8rem; max-width: 800px;"
+        style="margin: 3rem 8rem 3rem 8rem; max-width: 650px;"
         class="mx-auto"
       >
-        <h3 class="text-center">Acerca de mi</h3>
+        <h3 class="text-center" id="Acerca">Acerca de mi</h3>
         <!-- Photo -->
-        <div class="d-flex justify-content-center my-3">
+        <div class="d-flex justify-content-center my-3" id="img">
           <img
             loading="lazy"
             src="/Images/Photo.jpg"
@@ -99,7 +100,7 @@
           />
         </div>
         <!-- Paragraph -->
-        <p style="margin: 0 0.7rem 1rem 0.7rem;">
+        <p style="margin: 0 0.7rem 1rem 0.7rem;" id="p1">
           Soy un Venezolano nacido en 2002(17 años). Actualmente residente en
           Chile, lo que mas me define son los Videojuegos, por eso lo uso de
           imagen en esta seccion, forman parte de mi vida y fue lo que me
@@ -107,8 +108,8 @@
           series de animacion (Occidentales y Orientales) y escribir mis propias
           historias.
         </p>
-        <h4 class="text-center">Estudios</h4>
-        <p style="margin: 0 0.7rem 1rem 0.7rem;">
+        <h4 class="text-center" id="Estudios">Estudios</h4>
+        <p style="margin: 0 0.7rem 1rem 0.7rem;" id="p2">
           Sobre mis estudios termine la secundaria y tengo varios años de
           autodidacta. Algunos en paralelos con mis estudios de secundaria. La
           mayoria relacionados al mundo de la informamatica. Especialmente en el
@@ -228,6 +229,54 @@
         </div>
       </div>
     </footer>
+    <script>
+      ScrollReveal().reveal(".navbar", {
+        duration: 1000,
+        origin: "top",
+        distance: "5px",
+      });
+
+      ScrollReveal().reveal("#p1", {
+        duration: 1000,
+        origin: "left",
+        distance: "300px",
+      });
+
+      ScrollReveal().reveal("#p2", {
+        duration: 1000,
+        origin: "right",
+        distance: "300px",
+      });
+
+      ScrollReveal().reveal("#Estudios", {
+        duration: 1100,
+        origin: "right",
+        distance: "250px",
+        delay: "100",
+      });
+
+      ScrollReveal().reveal("#img", {
+        duration: 1000,
+        origin: "bottom",
+        distance: "100px",
+      });
+
+      ScrollReveal().reveal("#Acerca", {
+        duration: 1000,
+        origin: "bottom",
+        distance: "100px",
+      });
+      //Smooth Scroling
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+          });
+        });
+      });
+    </script>
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"

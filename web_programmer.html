@@ -12,6 +12,8 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+
     <!--load all styles -->
   </head>
   <body>
@@ -82,10 +84,44 @@
       </div>
     </header>
 
-    <!-- Evernote Clone -->
+    <!-- MERN Task -->
 
     <main role="main" class="bg-light py-5">
       <div class="row mb-5" style="margin: 0;">
+        <div class="col-lg-3 pb-4">
+          <div class="card offset-1 zoom shadow" style="width: 16rem;">
+            <img
+              loading="lazy"
+              src="./Images/MERN-Task.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Aplicacion de Tareas MERN</h5>
+              <p class="card-text">
+                Aplicación Web de Administración de Proyectos y Tareas con Login y Signup de usuarios. Creado con el Stack MERN, React para el Frontend, Express y Node JS para el Backend y MongoDB para la base de Datos.
+              </p>
+              <div class="d-flex justify-content-left">
+                <a
+                  class="btn btn-primary mx-auto"
+                  href="https://github.com/Marlos-Rodriguez/Evernote-Clone-React"
+                  target="_blank"
+                  role="button"
+                  >Cliente »</a
+                >
+                <a
+                  class="btn btn-primary mx-auto"
+                  href="https://marlos-rodriguez.github.io/Evernote-Clone-React"
+                  target="_blank"
+                  role="button"
+                  >Servidor »</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Evernote Clone -->
         <div class="col-lg-3 pb-4">
           <div class="card offset-1 zoom shadow" style="width: 16rem;">
             <img
@@ -95,11 +131,9 @@
               alt="..."
             />
             <div class="card-body">
-              <h5 class="card-title">Clon de Evernotee con React</h5>
+              <h5 class="card-title">MERN Task</h5>
               <p class="card-text">
-                Aplicacion de notas y tareas al estilo de Evernote hecha con
-                React JS y Firebase. Se puede agregar, eliminar y modificar
-                notas alojadas en una base de datos de Firebase
+                Aplicacion Web de Administracion de Proyectos y Tareas con Login y Signup de usuarios. Creado con el Stack MERN, React para el Frontend, Express y Node JS para el Backend y MongoDB para la base de Datos
               </p>
 
               <a
@@ -377,7 +411,7 @@
             </div>
           </div>
         </div>
-      </div>
+      
     </main>
 
     <hr class="featurette-divider my-0" />
@@ -489,6 +523,29 @@
         </div>
       </div>
     </footer>
+    <script>
+      ScrollReveal().reveal(".navbar", {
+        duration: 1000,
+        origin: "top",
+        distance: "5px",
+      });
+
+      ScrollReveal().reveal(".card", {
+        duration: 1000,
+        origin: "bottom",
+        distance: "75px",
+      });
+      //Smooth Scroling
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+          });
+        });
+      });
+    </script>
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"

@@ -12,6 +12,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/scrollreveal"></script>
   </head>
   <body class="bg-white">
     <!-- Header -->
@@ -165,32 +166,55 @@
             <div class="card zoom shadow" style="width: 18rem;">
               <img
                 loading="lazy"
-                src="./Images/Evernote Logo.jpg"
-                class="rounded-circle mx-auto mt-3"
+                src="./Images/MERN-Task.png"
+                class="card-img-top"
                 alt="Bootstap page image"
-                height="140"
+                height="160"
                 width="140"
               />
               <div class="card-body">
                 <h5 class="text-center card-title">
-                  Clon de Evernotee con React
+                  Administrador de Proyectos con MERN
                 </h5>
                 <p class="text-center card-text">
-                  Aplicacion de notas y tareas al estilo de Evernote hecha con
-                  React JS y Firebase. Se puede agregar, eliminar y modificar
-                  notas alojadas en una base de datos de Firebase
+                  Aplicación Web de Administración de Proyectos y Tareas con
+                  Login y Signup de usuarios. Creado con el Stack MERN, React
+                  para el Frontend, Express y Node JS para el Backend y MongoDB
+                  para la base de Datos.
                 </p>
                 <div class="d-flex justify-content-center">
+                  <div class="dropdown">
+                    <a
+                      class="btn btn-primary dropdown-toggle"
+                      href="#"
+                      role="button"
+                      id="dropdownMenuLink"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      GitHub
+                    </a>
+
+                    <div
+                      class="dropdown-menu"
+                      aria-labelledby="dropdownMenuLink"
+                    >
+                      <a
+                        class="dropdown-item"
+                        href="https://github.com/Marlos-Rodriguez/MERN-Task-Cliente"
+                        >Cliente</a
+                      >
+                      <a
+                        class="dropdown-item"
+                        href="https://github.com/Marlos-Rodriguez/MERN-Task-Servidor"
+                        >Servidor</a
+                      >
+                    </div>
+                  </div>
                   <a
                     class="btn btn-primary mx-auto"
-                    href="https://github.com/Marlos-Rodriguez/Evernote-Clone-React"
-                    target="_blank"
-                    role="button"
-                    >GitHub »</a
-                  >
-                  <a
-                    class="btn btn-primary mx-auto"
-                    href="https://marlos-rodriguez.github.io/Evernote-Clone-React"
+                    href="https://silly-hoover-e3bf9c.netlify.app/"
                     target="_blank"
                     role="button"
                     >Open »</a
@@ -205,11 +229,11 @@
             <div class="card zoom shadow" style="width: 18rem;">
               <img
                 loading="lazy"
-                src="./Images/2D-Platform-index.jpg"
-                class="px-auto rounded-circle mx-auto mt-3"
+                src="./Images/Fox-Platform.png"
+                class="card-img-top"
                 alt=""
-                height="140"
-                width="140"
+                height="180"
+                width="130"
               />
               <div class="card-body">
                 <h5 class="text-center card-title">
@@ -238,10 +262,10 @@
             <div class="card zoom shadow" style="width: 18rem;">
               <img
                 loading="lazy"
-                src="./Images/Marlos-Page-logo.png"
-                class="px-auto rounded-circle mx-auto mt-3"
+                src="./Images/Web-Image.jpeg"
+                class="card-img-top"
                 alt=""
-                height="140"
+                height="170"
                 width="140"
               />
               <div class="card-body">
@@ -511,6 +535,29 @@
         </div>
       </div>
     </footer>
+    <script>
+      ScrollReveal().reveal(".navbar", {
+        duration: 1000,
+        origin: "top",
+        distance: "5px",
+      });
+
+      ScrollReveal().reveal(".card", {
+        duration: 1000,
+        origin: "bottom",
+        distance: "75px",
+      });
+      //Smooth Scroling
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+          });
+        });
+      });
+    </script>
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"

@@ -12,6 +12,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/scrollreveal"></script>
   </head>
   <body>
     <header>
@@ -239,6 +240,29 @@
         </div>
       </div>
     </footer>
+    <script>
+      ScrollReveal().reveal(".navbar", {
+        duration: 1000,
+        origin: "top",
+        distance: "5px",
+      });
+
+      ScrollReveal().reveal(".card", {
+        duration: 1000,
+        origin: "bottom",
+        distance: "75px",
+      });
+      //Smooth Scroling
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+          });
+        });
+      });
+    </script>
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"

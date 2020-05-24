@@ -30,7 +30,7 @@
     "description": "Mi pagina Web sobre mi y mis proyectos. Construida por mi mismo con Bootstrap 4, una pagina principal como presentacion y otras 3 como paginas especificas.",
     "homepage": "https://marlos-rodriguez.github.io",
     "img": "./Images/Frontend-setup.jpeg",
-    "technologies": ["HTML", "CSS", "JavaScript"]
+    "technologies": ["HTML", "CSS", "JavaScript", "Bootstrap"]
   },
   {
     "name": "Aplicacion MERN de Proyectos",

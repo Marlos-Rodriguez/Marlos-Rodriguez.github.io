@@ -162,10 +162,10 @@
         <div class="div-container">
           <h1 class="titulo">Kills:</h1>
           <div class="div-padre-tec">
-            <div class="div-sub-tec" id="html">
+            <div class="div-sub-tec">
               <div class="div-tec">
                 <div class="div-imagen-tec">
-                  <img src="./Images/html.png" />
+                  <img src="./Images/html.png" id="HTML" />
                 </div>
                 <div class="div-tit" id="div-tit">
                   <h3>HTML5</h3>
@@ -176,7 +176,7 @@
             <div class="div-sub-tec">
               <div class="div-tec">
                 <div class="div-imagen-tec">
-                  <img src="./Images/css3.png" />
+                  <img src="./Images/css3.png" id="CSS" />
                 </div>
                 <div class="div-tit" id="div-tit">
                   <h3>CSS3</h3>
@@ -187,10 +187,10 @@
             <div class="div-sub-tec">
               <div class="div-tec">
                 <div class="div-imagen-tec">
-                  <img src="./Images/js.png" />
+                  <img src="./Images/js.png" id="JavaScript" />
                 </div>
                 <div class="div-tit">
-                  <h3>JAVASCRIPT</h3>
+                  <h3>JavaScript</h3>
                 </div>
               </div>
             </div>
@@ -198,7 +198,7 @@
             <div class="div-sub-tec">
               <div class="div-tec">
                 <div class="div-imagen-tec">
-                  <img src="./Images/react.png" />
+                  <img src="./Images/react.png" id="React" />
                 </div>
                 <div class="div-tit">
                   <h3>React.Js</h3>
@@ -206,7 +206,7 @@
               </div>
             </div>
 
-            <div class="div-sub-tec">
+            <div class="div-sub-tec" id="MongoDB">
               <div class="div-tec">
                 <div class="div-imagen-tec">
                   <img src="./Images/monogodb.png" />
@@ -220,7 +220,7 @@
             <div class="div-sub-tec">
               <div class="div-tec">
                 <div class="div-imagen-tec">
-                  <img src="./Images/icons8-undefined-144.png" />
+                  <img src="./Images/icons8-undefined-144.png" id="Bootstrap" />
                 </div>
                 <div class="div-tit">
                   <h3>Bootstrap</h3>
@@ -354,6 +354,8 @@
         </div>
       </div>
     </footer>
+
+    <script src="./index.js"></script>
     <script>
       ScrollReveal().reveal(".navbar", {
         duration: 1000,
@@ -366,6 +368,12 @@
         origin: "bottom",
         distance: "75px",
       });
+      ScrollReveal().reveal(".tarjt-portafolio", {
+        duration: 1000,
+        origin: "bottom",
+        distance: "75px",
+        opacity: 0,
+      });
       //Smooth Scroling
       document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
         anchor.addEventListener("click", function (e) {
@@ -377,8 +385,6 @@
         });
       });
     </script>
-
-    <script src="./index.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"

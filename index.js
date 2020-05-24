@@ -1,26 +1,50 @@
-document.getElementById("html").addEventListener("click", tecFilter);
-let portafolio = document.getElementById("card");
+$.ajaxSetup({
+  async: false,
+});
 
-let tecFilters = {
-  all: true,
-  html: "HTML",
-  css: "CSS",
-  javascript: "JavaScript",
-  react: "React",
-  mongodb: "MongoDB",
-  bootstrap: "Bootstrap",
-};
+let portafolio = document.getElementById("card");
+document.getElementById("HTML").addEventListener("click", tecFilter);
+document.getElementById("CSS").addEventListener("click", tecFilter);
+document.getElementById("JavaScript").addEventListener("click", tecFilter);
+document.getElementById("React").addEventListener("click", tecFilter);
+document.getElementById("MongoDB").addEventListener("click", tecFilter);
+document.getElementById("Bootstrap").addEventListener("click", tecFilter);
+
+window.sr = ScrollReveal();
+sr.reveal(".tarjt-portafolio");
 
 function tecFilter() {
-  tecFilters.all = false;
-  tecFilters.html = true;
+  PrinftData(this.id);
 }
 
-function PrinftData() {
-  $.getJSON("./JSON/Projects.json", function (data) {
-    data.map((card) => {
-      if (tecFilters.all) {
-        portafolio.innerHTML += `<div class="tarjt-portafolio zoom">
+let proyectos = null;
+
+$.getJSON("./JSON/Projects.json", function (data) {
+  proyectos = data;
+  data.map((card) => {
+    GetCard(card);
+  });
+});
+
+function PrinftData(tecFilter) {
+  portafolio.innerHTML = "";
+  proyectos.map((card) => {
+    let tecsFilter = card.technologies.filter((tec) => tec == tecFilter);
+    if (tecsFilter != "") {
+      console.log(card.name);
+      GetCard(card);
+      sr.reveal(".tarjt-portafolio", {
+        duration: 1000,
+        origin: "bottom",
+        distance: "200px",
+        opacity: 0,
+      });
+    }
+  });
+}
+
+function GetCard(card) {
+  portafolio.innerHTML += `<div class="tarjt-portafolio">
               <div>
           <img src=${card.img} alt="" />
         </div>
@@ -44,9 +68,6 @@ function PrinftData() {
           </a>
         </div>
               </div>`;
-      }
-    });
-  });
 }
 
 function GetTecs(array) {
@@ -60,5 +81,3 @@ function GetTecs(array) {
   });
   return "<p>" + tecs + "</p>";
 }
-
-PrinftData();

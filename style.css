@@ -23,11 +23,15 @@
   flex-wrap: wrap;
   justify-content: center;
 }
+.div-container {
+  margin-left: 50px;
+  margin-right: 50px;
+}
 
 .div-sub-tec {
   /*box-shadow: 1px 5px 10px gray;*/
   border-radius: 20px;
-  width: 25%;
+  width: 12.9rem;
   margin-top: 0px;
   margin-left: 0%;
 }
@@ -70,6 +74,10 @@
   color: #595965;
   text-align: center;
   cursor: pointer;
+}
+
+.seccion-tecnologias {
+  display: flex;
 }
 
 .seccion-portafolio {
@@ -156,7 +164,49 @@
   font-size: 20px;
 }
 
+.seccion-portafolio .div-portafolio .tarjt-portafolio .text .technologies {
+  margin-top: 10px;
+  font-size: 110%;
+  font-weight: bold;
+  color: #18105c;
+  margin-bottom: 50px;
+}
+
 .seccion-portafolio .div-portafolio .tarjt-portafolio .text p {
   font-weight: lighter;
   margin: 0 10px 0 10px;
+}
+
+.button-containers {
+  display: flex;
+  justify-content: flex-start;
+  justify-items: flex-start;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.button-containers .button {
+  font-weight: bold;
+  color: #1a1a1b;
+  text-decoration: none;
+  border: 2px solid #0a0a0a;
+  padding: 10px 30px !important;
+  border-radius: 2px;
+  font-size: 16px;
+  cursor: pointer !important;
+  text-decoration: none;
+  margin-left: 1rem;
+  position: relative;
+  bottom: 10;
+}
+
+.button-containers .button:hover {
+  background-color: #0a0a0a !important;
+  color: white;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.336);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.336);
+  text-decoration: none;
+  text-decoration: none;
 }

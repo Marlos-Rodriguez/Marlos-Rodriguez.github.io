@@ -13,6 +13,7 @@
     />
     <link rel="stylesheet" href="style.css" />
     <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <!--load all styles -->
   </head>
@@ -87,331 +88,94 @@
     <!-- MERN Task -->
 
     <main role="main" class="bg-light py-5">
-      <div class="row mb-5" style="margin: 0;">
-        <div class="col-lg-3 pb-4">
-          <div class="card offset-1 zoom shadow" style="width: 16rem;">
-            <img
-              loading="lazy"
-              src="./Images/MERN-Task.png"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Aplicacion de Tareas MERN</h5>
-              <p class="card-text">
-                Aplicación Web de Administración de Proyectos y Tareas con Login y Signup de usuarios. Creado con el Stack MERN, React para el Frontend, Express y Node JS para el Backend y MongoDB para la base de Datos.
-              </p>
-              <div class="d-flex justify-content-left">
-                <a
-                  class="btn btn-primary mx-auto"
-                  href="https://github.com/Marlos-Rodriguez/Evernote-Clone-React"
-                  target="_blank"
-                  role="button"
-                  >Cliente »</a
-                >
-                <a
-                  class="btn btn-primary mx-auto"
-                  href="https://marlos-rodriguez.github.io/Evernote-Clone-React"
-                  target="_blank"
-                  role="button"
-                  >Servidor »</a
-                >
+      <section class="seccion-tecnologias">
+        <div class="div-container">
+          <h1 class="titulo">Kills:</h1>
+          <div class="div-padre-tec">
+            <div class="div-sub-tec">
+              <div class="div-tec">
+                <div class="div-imagen-tec">
+                  <img src="./Images/HTML.svg" id="HTML" />
+                </div>
+                <div class="div-tit" id="div-tit">
+                  <h3>HTML</h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="div-sub-tec">
+              <div class="div-tec">
+                <div class="div-imagen-tec">
+                  <img src="./Images/CSS.svg" id="CSS" style="height: 70px;" />
+                </div>
+                <div class="div-tit" id="div-tit">
+                  <h3>CSS</h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="div-sub-tec">
+              <div class="div-tec">
+                <div class="div-imagen-tec">
+                  <img src="./Images/JS.svg" id="JavaScript" />
+                </div>
+                <div class="div-tit">
+                  <h3>JavaScript</h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="div-sub-tec">
+              <div class="div-tec">
+                <div class="div-imagen-tec">
+                  <img src="./Images/react.svg" id="React" />
+                </div>
+                <div class="div-tit">
+                  <h3>React.Js</h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="div-sub-tec" id="MongoDB">
+              <div class="div-tec">
+                <div class="div-imagen-tec">
+                  <img src="./Images/MongoDB.svg" />
+                </div>
+                <div class="div-tit">
+                  <h3>MonogoDB</h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="div-sub-tec">
+              <div class="div-tec">
+                <div class="div-imagen-tec">
+                  <img src="./Images/Bootstrap.svg" id="Bootstrap" />
+                </div>
+                <div class="div-tit">
+                  <h3>Bootstrap</h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="div-sub-tec" style="display: none;">
+              <div class="div-tec">
+                <div class="div-imagen-tec">
+                  <img src="./Images/icons8-react-native-144.png" />
+                </div>
+                <div class="div-tit">
+                  <h3>React js</h3>
+                </div>
               </div>
             </div>
           </div>
         </div>
-
-        <!-- Evernote Clone -->
-        <div class="col-lg-3 pb-4">
-          <div class="card offset-1 zoom shadow" style="width: 16rem;">
-            <img
-              loading="lazy"
-              src="./Images/Evernote-clone.png"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">MERN Task</h5>
-              <p class="card-text">
-                Aplicacion Web de Administracion de Proyectos y Tareas con Login y Signup de usuarios. Creado con el Stack MERN, React para el Frontend, Express y Node JS para el Backend y MongoDB para la base de Datos
-              </p>
-
-              <a
-                href="https://github.com/Marlos-Rodriguez/Evernote-Clone-React"
-                class="btn btn-primary"
-                target="_blank"
-                >GitHub</a
-              >
-            </div>
-          </div>
+      </section>
+      <section class="seccion-portafolio" id="portafolio">
+        <div class="contenedor">
+          <div class="div-portafolio" id="card"></div>
         </div>
-
-        <!-- Movie React App -->
-
-        <div class="col-lg-3 pb-4">
-          <div class="card offset-1 zoom shadow" style="width: 16rem;">
-            <img
-              loading="lazy"
-              src="./Images/Movie-API.png"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Aplicacion de Busqueda de Peliculas</h5>
-              <p class="card-text">
-                Aplicacion de Busqueda de Peliculas creada con HTML, CSS y
-                React, busca la peliculas por titulo mostrando titulo completo,
-                portada y una ventana flotante con la descripcion al hacer click
-              </p>
-
-              <a
-                href="https://github.com/Marlos-Rodriguez/Movie-API-React"
-                class="btn btn-primary"
-                target="_blank"
-                >GitHub</a
-              >
-            </div>
-          </div>
-        </div>
-
-        <!-- My WebSite -->
-
-        <div class="col-lg-3 pb-4">
-          <div class="card offset-1 zoom shadow" style="width: 16rem;">
-            <img
-              loading="lazy"
-              src="./Images/Frontend-setup.jpeg"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Mi pagina Principal</h5>
-              <p class="card-text">
-                Es la pagina en la que estan ahora, construida por mi mismo con
-                Bootstrap 4, una pagina principal como presentacion y otras dos
-                como paginas especificas.
-              </p>
-
-              <a
-                href="https://github.com/Marlos-Rodriguez/Marlos-Rodriguez.github.io"
-                class="btn btn-primary"
-                target="_blank"
-                >GitHub</a
-              >
-            </div>
-          </div>
-        </div>
-
-        <!-- React / Firebase Chat -->
-
-        <div class="col-lg-3 pb-4">
-          <div class="card offset-1 zoom shadow" style="width: 16rem;">
-            <img
-              loading="lazy"
-              src="./Images/React-Chat.png"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Chat React Firebase</h5>
-              <p class="card-text">
-                Esta es una Aplicacion web de un Chat construido con React Js
-                usando firebase como base datos, para la interfaz se utilizo
-                Bootstrap 4 para simplificar el trabajo.
-              </p>
-              <a
-                href="https://github.com/Marlos-Rodriguez/React-Firebase-Chat"
-                class="btn btn-primary"
-                target="_blank"
-                >GitHub</a
-              >
-            </div>
-          </div>
-        </div>
-
-        <!-- Shopping Cart -->
-
-        <div class="col-lg-3 pb-4">
-          <div class="card offset-1 zoom shadow" style="width: 16rem;">
-            <img
-              src="./Images/Sweet page.png"
-              loading="lazy"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Carro de Compras</h5>
-              <p class="card-text">
-                Pagina web con un Carro de compras funcional en el Frontend en
-                todos los productos de la pagina, hecho con solo JavaScript.
-              </p>
-              <a
-                href="https://github.com/Marlos-Rodriguez/Shopping-Cart-Curse"
-                class="btn btn-primary"
-                target="_blank"
-                >GitHub</a
-              >
-            </div>
-          </div>
-        </div>
-
-        <!-- Task App React -->
-
-        <div class="col-lg-3 pb-4">
-          <div class="card offset-1 zoom shadow" style="width: 16rem;">
-            <img
-              src="./Images/Task-React.png"
-              loading="lazy"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Aplicacion de Tareas React</h5>
-              <p class="card-text">
-                Esta es una Aplicacion web para administrar tareas con titulo,
-                persona responsable, descripcion e importancia para cada tarea,
-                construido en React Js usando componentes, promesas y estados.
-              </p>
-              <a
-                href="https://github.com/Marlos-Rodriguez/Gestor-Tasks-React"
-                class="btn btn-primary"
-                target="_blank"
-                >GitHub</a
-              >
-            </div>
-          </div>
-        </div>
-
-        <!-- Bootstrap Page -->
-
-        <div class="col-lg-3 pb-4">
-          <div class="card offset-1 zoom shadow" style="width: 16rem;">
-            <img
-              loading="lazy"
-              src="./Images/bootstrap-Page.png"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Pagina Hecha con Bootstrap</h5>
-              <p class="card-text">
-                Pagina web hecha con Bootstrap 4 y ScrollReveal JS para un
-                producto electronico, en este ejemplo sobre un telefono.
-              </p>
-              <a
-                href="https://github.com/Marlos-Rodriguez/Bootstrap-Curso"
-                class="btn btn-primary"
-                target="_blank"
-                >GitHub</a
-              >
-            </div>
-          </div>
-        </div>
-
-        <!-- Weather React App -->
-
-        <div class="col-lg-3 pb-4">
-          <div class="card offset-1 zoom shadow" style="width: 16rem;">
-            <img
-              loading="lazy"
-              src="./Images/Weather app.png"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Aplicacion del Clima con React</h5>
-              <p class="card-text">
-                Aplicacion web hecha con React para mostrar el clima de la
-                ciudad que se ingrese en el formulario con la API de
-                OpenOeatherMap.
-              </p>
-              <a
-                href="https://github.com/Marlos-Rodriguez/React-Webpack-Openlibrary"
-                class="btn btn-primary"
-                target="_blank"
-                >GitHub</a
-              >
-            </div>
-          </div>
-        </div>
-
-        <!-- OpenLibrary React -->
-
-        <div class="col-lg-3 pb-4">
-          <div class="card offset-1 zoom shadow" style="width: 16rem;">
-            <img
-              loading="lazy"
-              src="./Images/Openlibrary-React.png"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Aplicacion de cambios de OpenLibrary</h5>
-              <p class="card-text">
-                Esta es una aplicacion web que utilizando la API de OpenLibrary
-                muestra los cambios realizados por los usuarios usando
-                informacion publica.
-              </p>
-              <a
-                href="https://github.com/Marlos-Rodriguez/React-Webpack-Openlibrary"
-                class="btn btn-primary"
-                target="_blank"
-                >GitHub</a
-              >
-            </div>
-          </div>
-        </div>
-
-        <!-- Task App Javascript -->
-
-        <div class="col-lg-3 pb-4">
-          <div class="card offset-1 zoom shadow" style="width: 16rem;">
-            <img
-              loading="lazy"
-              src="./Images/Task Javascript.png"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Aplicacion de Tareas JavaScript</h5>
-              <p class="card-text">
-                Aplicacion de Tareas hecha con JavaScript
-              </p>
-              <a
-                href="https://marlos-rodriguez.github.io/Tasks-App-Javascript-Curse/"
-                class="btn btn-primary"
-                target="_blank"
-                >GitHub</a
-              >
-            </div>
-          </div>
-        </div>
-
-        <!-- Calculator Javascript -->
-
-        <div class="col-lg-3 pb-4">
-          <div class="card offset-1 zoom shadow" style="width: 16rem;">
-            <img
-              loading="lazy"
-              src="./Images/Calculadora Javascript.png"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Calculadora JavaScript</h5>
-              <p class="card-text">
-                Calculadora Hecha con JavaScript
-              </p>
-              <a
-                href="https://github.com/Marlos-Rodriguez/Calculadora-Javascript-project"
-                class="btn btn-primary"
-                target="_blank"
-                >GitHub</a
-              >
-            </div>
-          </div>
-        </div>
-      
+      </section>
     </main>
 
     <hr class="featurette-divider my-0" />
@@ -530,10 +294,11 @@
         distance: "5px",
       });
 
-      ScrollReveal().reveal(".card", {
+      ScrollReveal().reveal(".tarjt-portafolio", {
         duration: 1000,
         origin: "bottom",
         distance: "75px",
+        opacity: 0,
       });
       //Smooth Scroling
       document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
@@ -546,6 +311,7 @@
         });
       });
     </script>
+    <script src="./JS/web.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"

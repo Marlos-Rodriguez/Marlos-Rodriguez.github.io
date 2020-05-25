@@ -21,9 +21,8 @@ let proyectos = null;
 
 $.getJSON("./JSON/Projects.json", function (data) {
   proyectos = data;
-  data.map((card) => {
-    GetCard(card);
-  });
+  console.log(data);
+  PrinftData("HTML");
 });
 
 function PrinftData(tecFilter) {
@@ -31,7 +30,6 @@ function PrinftData(tecFilter) {
   proyectos.map((card) => {
     let tecsFilter = card.technologies.filter((tec) => tec == tecFilter);
     if (tecsFilter != "") {
-      console.log(card.name);
       GetCard(card);
       sr.reveal(".tarjt-portafolio", {
         duration: 1000,
@@ -46,28 +44,37 @@ function PrinftData(tecFilter) {
 function GetCard(card) {
   portafolio.innerHTML += `<div class="tarjt-portafolio">
               <div>
-          <img src=${card.img} alt="" />
-        </div>
-        <div class="text">
-          <h1>
-            ${card.name}
-          </h1>
-          <p>
-            ${card.description}
-          </p>
-          <p>
-            <span>${GetTecs(card.technologies)}</span>
-          </p>
-          <br />
-          <a
-            href=${card.url}
-            target="_blank"
-            class="boton-1"
-          >
-            Ver Proyecto
-          </a>
-        </div>
-              </div>`;
+                <img src="${card.img}" alt="" />
+              </div>
+              <div class="text">
+                <h1>
+                  ${card.name}
+                </h1>
+                <p>
+                  ${card.description}
+                </p>
+                <span class="technologies">
+                  ${GetTecs(card.technologies)}
+                </span>
+                <br />
+                <section class="button-containers">
+                  <a href="${card.url}" target="_blank" class="button">
+                    Codigo
+                  </a>
+                  ${
+                    card.homepage != ""
+                      ? `<a
+                    href="${card.homepage}"
+                    target="_blank"
+                    class="button"
+                  >
+                    Abrir </a
+                  >`
+                      : ""
+                  }
+                </section>
+              </div>
+            </div>`;
 }
 
 function GetTecs(array) {

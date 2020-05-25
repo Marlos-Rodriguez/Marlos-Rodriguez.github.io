@@ -3,5 +3,210 @@
 }
 
 .zoom:hover {
-  transform: scale(1.03);
+  transform: translateY(-20px);
+}
+
+.titulo {
+  text-align: center;
+  margin-left: 10px;
+  margin-top: 30px;
+  font-size: 40px;
+  font-weight: bolder;
+  font-weight: 700;
+  color: #000000;
+}
+
+.div-padre-tec {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.div-container {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.div-sub-tec {
+  /*box-shadow: 1px 5px 10px gray;*/
+  border-radius: 20px;
+  width: 12.9rem;
+  margin-top: 0px;
+  margin-left: 0%;
+}
+
+.div-tec {
+  border-radius: 2px;
+  height: auto;
+}
+
+.div-imagen-tec {
+  width: initial;
+  height: auto;
+  text-align: center;
+}
+
+.div-imagen-tec img {
+  width: 30%;
+}
+
+.div-imagen-tec img:hover {
+  transition: all 0.3s;
+  transform: translateY(-20px);
+}
+
+.div-tit {
+  height: auto;
+}
+
+.div-tit h3 {
+  color: #000000;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+  font-weight: 700;
+}
+
+.text-tec {
+  color: #595965;
+  text-align: center;
+  cursor: pointer;
+}
+
+.seccion-tecnologias {
+  display: flex;
+}
+
+.seccion-portafolio {
+  width: 100%;
+  padding: 40px 0px;
+}
+
+.seccion-portafolio .tit {
+  width: 100%;
+  text-align: center;
+}
+
+.seccion-portafolio .tit h1 {
+  font-size: 300%;
+  margin: 0;
+  font-weight: bold;
+  padding: 10px 0px;
+}
+
+.seccion-portafolio .tit p {
+  margin: 0;
+  padding: 0;
+  font-size: 130%;
+}
+
+.seccion-portafolio .div-portafolio {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  padding: 20px 0px;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.seccion-portafolio .div-portafolio .tarjt-portafolio {
+  width: 400px;
+  margin: 50px auto;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-shadow: 10px 10px 30px #0000001e;
+  box-shadow: 10px 10px 30px #0000001e;
+  border-radius: 30px;
+  transition: transform 0.2s;
+}
+
+.seccion-portafolio .div-portafolio .tarjt-portafolio:hover {
+  transform: translateY(-20px);
+}
+
+.seccion-portafolio .div-portafolio .tarjt-portafolio div {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.seccion-portafolio .div-portafolio .tarjt-portafolio div img {
+  width: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.seccion-portafolio .div-portafolio .tarjt-portafolio div h1 {
+  font-size: 20px;
+}
+
+.seccion-portafolio .div-portafolio .tarjt-portafolio .text .technologies {
+  margin-top: 10px;
+  font-size: 110%;
+  font-weight: bold;
+  color: #18105c;
+  margin-bottom: 50px;
+}
+
+.seccion-portafolio .div-portafolio .tarjt-portafolio .text p {
+  font-weight: lighter;
+  margin: 0 10px 0 10px;
+}
+
+.button-containers {
+  display: flex;
+  justify-content: flex-start;
+  justify-items: flex-start;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.button-containers .button {
+  font-weight: bold;
+  color: #1a1a1b;
+  text-decoration: none;
+  border: 2px solid #0a0a0a;
+  padding: 10px 30px !important;
+  border-radius: 2px;
+  font-size: 16px;
+  cursor: pointer !important;
+  text-decoration: none;
+  margin-left: 1rem;
+  position: relative;
+  bottom: 10;
+}
+
+.button-containers .button:hover {
+  background-color: #0a0a0a !important;
+  color: white;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.336);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.336);
+  text-decoration: none;
+  text-decoration: none;
 }

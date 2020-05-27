@@ -63,15 +63,14 @@
     "description": "App de citas para el Veterinario con React Js del Curso de Juan Pablo De la torre Valdez en Udemy",
     "homepage": "https://marlos-rodriguez.github.io/Appointments-React/",
     "img": "./Images/Appointments.png",
-    "technologies": ["HTML", "Bootstrap"]
+    "technologies": ["HTML", "CSS", "JavaScript", "React"]
   },
-
   {
     "name": "Pagina de Producto con Bootstrap",
     "url": "https://github.com/Marlos-Rodriguez/Bootstrap-Curso",
     "description": "Pagina web hecha con Bootstrap 4 y ScrollReveal JS para un producto electronico, en este ejemplo sobre un telefono.",
     "homepage": "https://marlos-rodriguez.github.io/Bootstrap-Curso/",
     "img": "./Images/bootstrap-Page.png",
-    "technologies": ["HTML", "CSS", "JavaScript", "React"]
+    "technologies": ["HTML", "Bootstrap"]
   }
 ]

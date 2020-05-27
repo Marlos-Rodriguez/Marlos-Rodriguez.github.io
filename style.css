@@ -45,6 +45,7 @@
   width: initial;
   height: auto;
   text-align: center;
+  align-items: center;
 }
 
 .div-imagen-tec img {

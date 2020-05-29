@@ -4,16 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Marlos Rodriguez</title>
-    <link rel="shortcut icon" href="./Images/logo.png" />
+    <link rel="shortcut icon" href="./Images/logo.webp" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="preload"
+      href="style.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript>
+      <link rel="stylesheet" href="style.css" />
+    </noscript>
     <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body class="bg-white">
     <!-- Header -->
@@ -89,8 +96,9 @@
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img
-              src="./Images/Frontend-setup.jpeg"
+              src="./Images/Frontend-setup.webp"
               class="d-block w-100"
+              loading="lazy"
               style="max-height: 660px; min-height: 230px;"
             />
             <div class="carousel-caption d-none d-md-block">
@@ -105,8 +113,9 @@
           </div>
           <div class="carousel-item">
             <img
-              src="./Images/Game-programmer.jpg"
+              src="./Images/Game-programmer.webp"
               class="d-block w-100"
+              loading="lazy"
               style="max-height: 660px; min-height: 230px;"
             />
             <div class="carousel-caption d-none d-md-block">
@@ -123,8 +132,9 @@
           </div>
           <div class="carousel-item">
             <img
-              src="./Images/Sobre-mi.jpg"
-              class="d-block w-100"
+              src="./Images/Sobre-mi.webp"
+              class="d-block w-100 lazy"
+              loading="lazy"
               style="max-height: 660px; min-height: 230px;"
             />
 
@@ -374,7 +384,7 @@
         </div>
       </div>
     </footer>
-    <script src="./JS/index.js"></script>
+    <script type="module" src="./JS/index.js"></script>
     <script>
       ScrollReveal().reveal(".navbar", {
         duration: 1000,

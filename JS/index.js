@@ -1,6 +1,4 @@
-$.ajaxSetup({
-  async: false,
-});
+import { projects } from "./Projects.js";
 
 let portafolio = document.getElementById("card");
 document.getElementById("HTML").addEventListener("click", tecFilter);
@@ -17,18 +15,13 @@ function tecFilter() {
   PrinftData(this.id);
 }
 
-let proyectos = null;
-
-$.getJSON("./JSON/Projects.json", function (data) {
-  proyectos = data;
-  data.map((card) => {
-    GetCard(card);
-  });
+projects.map((card) => {
+  GetCard(card);
 });
 
 function PrinftData(tecFilter) {
   portafolio.innerHTML = "";
-  proyectos.map((card) => {
+  projects.map((card) => {
     let tecsFilter = card.technologies.filter((tec) => tec == tecFilter);
     if (tecsFilter != "") {
       GetCard(card);
@@ -45,7 +38,7 @@ function PrinftData(tecFilter) {
 function GetCard(card) {
   portafolio.innerHTML += `<div class="tarjt-portafolio">
             <div>
-              <img src="${card.img}" alt="" />
+              <img src="${card.img}" loading="lazy" alt="" />
             </div>
             <div class="text">
               <h1>

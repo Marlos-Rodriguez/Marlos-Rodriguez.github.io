@@ -1,23 +1,19 @@
-$.ajaxSetup({
-  async: false,
-});
+import { projects } from "./Projects.js";
 
 let portafolio = document.getElementById("card");
 
 window.sr = ScrollReveal();
 sr.reveal(".tarjt-portafolio");
 
-let proyectos = null;
+function tecFilter() {
+  PrinftData(this.id);
+}
 
-$.getJSON("./JSON/Projects.json", function (data) {
-  proyectos = data;
-
-  PrinftData("Unity");
-});
+PrinftData("Unity");
 
 function PrinftData(tecFilter) {
   portafolio.innerHTML = "";
-  proyectos.map((card) => {
+  projects.map((card) => {
     let tecsFilter = card.technologies.filter((tec) => tec == tecFilter);
     if (tecsFilter != "") {
       GetCard(card);
@@ -33,38 +29,38 @@ function PrinftData(tecFilter) {
 
 function GetCard(card) {
   portafolio.innerHTML += `<div class="tarjt-portafolio">
-                <div>
-                  <img src="${card.img}" alt="" />
-                </div>
-                <div class="text">
-                  <h1>
-                    ${card.name}
-                  </h1>
-                  <p>
-                    ${card.description}
-                  </p>
-                  <span class="technologies">
-                    ${GetTecs(card.technologies)}
-                  </span>
-                  <br />
-                  <section class="button-containers">
-                    <a href="${card.url}" target="_blank" class="button">
-                      Codigo
-                    </a>
-                    ${
-                      card.homepage != ""
-                        ? `<a
-                      href="${card.homepage}"
-                      target="_blank"
-                      class="button"
-                    >
-                      Abrir </a
-                    >`
-                        : ""
-                    }
-                  </section>
-                </div>
-              </div>`;
+            <div>
+              <img src="${card.img}" loading="lazy" alt="" />
+            </div>
+            <div class="text">
+              <h1>
+                ${card.name}
+              </h1>
+              <p>
+                ${card.description}
+              </p>
+              <span class="technologies">
+                ${GetTecs(card.technologies)}
+              </span>
+              <br />
+              <section class="button-containers">
+                <a href="${card.url}" target="_blank" class="button">
+                  Codigo
+                </a>
+                ${
+                  card.homepage != ""
+                    ? `<a
+                  href="${card.homepage}"
+                  target="_blank"
+                  class="button"
+                >
+                  Abrir </a
+                >`
+                    : ""
+                }
+              </section>
+            </div>
+          </div>`;
 }
 
 function GetTecs(array) {

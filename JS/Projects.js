@@ -14,7 +14,7 @@ const projects = [
     description:
       "Es la pagina en la que estan ahora, construida por mi mismo con JavaScript, CSS y Bootstrap 4, una pagina principal como presentacion y otras dos como paginas para mis trabajos como desarrollador Web y de Videojeugos.",
     homepage: "https://marlos-rodriguez.github.io",
-    img: "./Images/Frontend-setup.webp",
+    img: "./Images/web-page.webp",
     technologies: ["HTML", "CSS", "JavaScript", "Bootstrap"],
   },
   {

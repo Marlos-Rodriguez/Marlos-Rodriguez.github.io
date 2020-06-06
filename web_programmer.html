@@ -11,18 +11,18 @@
       as="style"
       onload="this.onload=null;this.rel='stylesheet'"
     />
-    <noscript>
-      <link rel="stylesheet" href="./CSS/bootstrap.min.css" />
-    </noscript>
+
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css" />
+
     <link
       rel="preload"
       href="./CSS/style.css"
       as="style"
       onload="this.onload=null;this.rel='stylesheet'"
     />
-    <noscript>
-      <link rel="stylesheet" href="./CSS/style.css" />
-    </noscript>
+
+    <link rel="stylesheet" href="./CSS/style.css" />
+
     <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="preload" href="./JS/Projects.js" as="script" />
 
@@ -78,27 +78,21 @@
           </ul>
         </div>
       </nav>
-      <div class="active">
-        <img
-          loading="lazy"
-          src="./Images/Frontend-setup.webp"
-          class="d-block w-100"
-          style="max-height: 660px; min-height: 230px;"
-          alt="..."
-        />
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Programador Web</h5>
-          <p>
-            Experiencia con HTML, CSS, JavaScript, Bootstrap, React JS, Node JS,
-            Firebase y MongoDB.
-          </p>
-        </div>
-      </div>
     </header>
 
     <!-- MERN Task -->
 
     <main role="main" class="bg-light py-5">
+      <div class="contenedor">
+        <div class="titulo-principal">
+          Programador Web
+        </div>
+        <div class="text-left descripcion">
+          Experiencia con HTML, CSS, JavaScript, React JS, Bootstrap, Node JS,
+          Firebase y MongoDB.
+        </div>
+        <img src="./Images/web_cover.svg" class="w-100" />
+      </div>
       <section class="seccion-tecnologias">
         <div class="div-container">
           <h1 class="titulo">Kills:</h1>
@@ -184,106 +178,50 @@
 
     <footer
       id="footer-class"
-      class="container page-footer font-small pt-4 mb-auto"
+      class="container page-footer font-small blue pt-4"
     >
-      <p class="float-right my-auto"><a href="#">Back to top</a></p>
       <div class="row featurette">
-        <div class="col-md-4">
+        <div class="col-md-3">
           <!-- Contacto -->
           <h4>Contacto</h4>
-          <ul class="list-unstyled list-group list-group-flush">
-            <li class="list-group-item">
+          <div class="contenedor-contact">
+            <div>
               <a
                 href="https://github.com/Marlos-Rodriguez"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="navbar-brand text-dark"
-                style="font-size: 1rem;"
-              >
-                GitHub</a
-              >
-            </li>
-            <li class="list-group-item">
-              <a
-                href="https://twitter.com/RodriguezMarlos"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="navbar-brand text-dark"
-                style="font-size: 1rem;"
-                >Twitter</a
-              >
-            </li>
-            <li class="list-group-item">
+                class="navbar-brand text-dark contact-icon"
+                ><img src="./Images/github-icon.svg" alt="github-icon"
+              /></a>
+            </div>
+            <div>
               <a
                 href="https://www.linkedin.com/in/marlos-rodriguez-7268481a2/"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="navbar-brand text-dark"
-                style="font-size: 1rem;"
-                >LinkedIn</a
-              >
-            </li>
-            <li class="list-group-item">
+                class="navbar-brand text-dark contact-icon"
+                ><img src="./Images/linkedin.svg" alt="linkedIn-icon"
+              /></a>
+            </div>
+            <div>
               <a
-                href="mailto:Marlos2811@hotmail.com"
+                href="https://twitter.com/RodriguezMarlos"
+                target="_blank"
                 rel="noopener noreferrer"
-                class="navbar-brand text-dark"
-                style="font-size: 1rem;"
-                >Email</a
-              >
-            </li>
-            <li class="list-group-item">
+                class="navbar-brand text-dark contact-icon"
+                ><img src="./Images/twitter.svg" alt="twitter-icon"
+              /></a>
+            </div>
+            <div>
               <a
                 href="./Marlos Rodriguez Curriculum.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="navbar-brand text-dark"
-                style="font-size: 1rem;"
-                >Curriculum</a
-              >
-            </li>
-          </ul>
-        </div>
-        <!-- Enlaces -->
-        <div class="col-md-4 offset-1">
-          <ul class="list-unstyled list-group list-group-flush">
-            <h4>Enlaces</h4>
-            <li class="list-group-item">
-              <a
-                href="./index.html"
-                rel="noopener noreferrer"
-                class="navbar-brand text-dark"
-                style="font-size: 1rem;"
-                >Home</a
-              >
-            </li>
-            <li class="list-group-item">
-              <a
-                href="#"
-                rel="noopener noreferrer"
-                class="navbar-brand text-dark"
-                style="font-size: 1rem;"
-                >Programador Web</a
-              >
-            </li>
-            <li class="list-group-item">
-              <a
-                href="./game_programmer.html"
-                rel="noopener noreferrer"
-                class="navbar-brand text-dark"
-                style="font-size: 1rem;"
-                >Programador de Videojuegos</a
-              >
-            </li>
-            <li class="list-group-item">
-              <a
-                class="navbar-brand text-dark"
-                style="font-size: 1rem;"
-                href="./about.html"
-                >Sobre mi</a
-              >
-            </li>
-          </ul>
+                class="navbar-brand text-dark contact-icon"
+                ><img src="./Images/curriculum-vitae.svg" alt="curriculum-icon"
+              /></a>
+            </div>
+          </div>
         </div>
       </div>
     </footer>

@@ -6,7 +6,15 @@ const projects = [
       "Aplicación Web de Administración de Proyectos y Tareas con Login y Signup de usuarios. Creado con el Stack MERN, React para el Frontend, Express y Node JS para el Backend y MongoDB para la base de Datos.",
     homepage: "https://silly-hoover-e3bf9c.netlify.app",
     img: "./Images/MERN-Task.webp",
-    technologies: ["HTML", "CSS", "JavaScript", "React", "MongoDB"],
+    technologies: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React",
+      "Node JS",
+      "Express",
+      "MongoDB",
+    ],
   },
   {
     name: "Mi Pagina Web",
@@ -18,8 +26,16 @@ const projects = [
     technologies: ["HTML", "CSS", "JavaScript", "Bootstrap"],
   },
   {
+    name: "Gestor de Productos",
+    url: "https://github.com/Marlos-Rodriguez/Crud-Redux",
+    description:
+      "Aplicacion de Administracion de Productos con nombre y precio. Creado con React usando Redux y React Hooks. Contando con la posibilidad de agregar un nuevo producto, Editarlo y Eliminarlo",
+    homepage: "https://marlos-rodriguez.github.io/Crud-Redux/#/",
+    img: "./Images/CrudRedux.webp",
+    technologies: ["HTML", "CSS", "JavaScript", "React", "Redux"],
+  },
+  {
     name: "Aplicacion de Peliculas con React",
-    full_name: "Marlos-Rodriguez/Movie-API-React",
     url: "https://github.com/Marlos-Rodriguez/Movie-API-React",
     description:
       "Aplicacion de Busqueda de Peliculas creada con HTML, CSS y React, busca la peliculas por titulo mostrando titulo completo, portada y una ventana flotante con la descripcion al hacer click",

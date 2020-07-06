@@ -26,6 +26,15 @@ const projects = [
     technologies: ["HTML", "CSS", "JavaScript", "Bootstrap"],
   },
   {
+    name: "Clon de Product Hunt",
+    url: "https://github.com/Marlos-Rodriguez/Product-Hunt-Next-Firebase",
+    description:
+      "Aplicación clon de Product Hunt con React/Next JS y Firebase. Login y SignUp con Firebase authentication y creación de productos con Firestore y firebase storage.",
+    homepage: "https://adoring-lewin-b7bac8.netlify.app",
+    img: "./Images/producthunt.webp",
+    technologies: ["HTML", "CSS", "JavaScript", "React", "Next", "Firebase"],
+  },
+  {
     name: "Gestor de Productos",
     url: "https://github.com/Marlos-Rodriguez/Crud-Redux",
     description:
@@ -66,7 +75,7 @@ const projects = [
       "Aplicacion de notas y tareas al estilo de Evernote hecha con React JS y Firebase. Se puede agregar, eliminar y modificar notas alojadas en una base de datos de Firebase",
     homepage: "https://marlos-rodriguez.github.io/Evernote-Clone-React/",
     img: "./Images/Evernote-clone.webp",
-    technologies: ["HTML", "CSS", "JavaScript", "React"],
+    technologies: ["HTML", "CSS", "JavaScript", "React", "Firebase"],
   },
   {
     name: "Plataformas 2D",

@@ -35,6 +35,15 @@ const projects = [
     technologies: ["HTML", "CSS", "JavaScript", "React", "Next", "Firebase"],
   },
   {
+    name: "Pagina Web de Hotel con Gatsby",
+    url: "https://github.com/Marlos-Rodriguez/Gatsby-Hotel",
+    description:
+      "Pagina Web de hoteles creada con React / Gatsby, Styled Components y Dato CMS con GraphQL",
+    homepage: "https://pedantic-wilson-8d21bd.netlify.app/",
+    img: "./Images/hotelgatsby.webp",
+    technologies: ["HTML", "CSS", "JavaScript", "React", "Gatsby", "GraphQL"],
+  },
+  {
     name: "Gestor de Productos",
     url: "https://github.com/Marlos-Rodriguez/Crud-Redux",
     description:
@@ -87,15 +96,6 @@ const projects = [
     technologies: ["C#", "Unity"],
   },
   {
-    name: "Administrador de pacientes con React",
-    url: "https://github.com/Marlos-Rodriguez/Appointments-React",
-    description:
-      "App de citas para el Veterinario con React Js del Curso de Juan Pablo De la torre Valdez en Udemy",
-    homepage: "https://marlos-rodriguez.github.io/Appointments-React/",
-    img: "./Images/Appointments.webp",
-    technologies: ["HTML", "CSS", "JavaScript", "React"],
-  },
-  {
     name: "Pagina de Producto con Bootstrap",
     url: "https://github.com/Marlos-Rodriguez/Bootstrap-Curso",
     description:
@@ -105,15 +105,5 @@ const projects = [
     technologies: ["HTML", "Bootstrap"],
   },
 ];
-
-function PrinftData(tecFilter) {
-  portafolio.innerHTML = "";
-  projects.map((card) => {
-    let tecsFilter = card.technologies.filter((tec) => tec == tecFilter);
-    if (tecsFilter != "") {
-      GetCard(card);
-    }
-  });
-}
 
 export { projects };

@@ -36,31 +36,34 @@ function PrinftData(tecFilter) {
 }
 
 function GetCard(card) {
+  const { img, name, description, technologies, url, homepage, imgalt } = card;
+
   portafolio.innerHTML += `<div class="tarjt-portafolio">
             <div>
-              <img src="${card.img}" loading="lazy" alt="" />
+              <img src="${img}" loading="lazy" alt="${imgalt}" />
             </div>
             <div class="text">
               <h1>
-                ${card.name}
+                ${name}
               </h1>
               <p>
-                ${card.description}
+                ${description}
               </p>
               <span class="technologies">
-                ${GetTecs(card.technologies)}
+                ${GetTecs(technologies)}
               </span>
               <br />
               <section class="button-containers">
-                <a href="${card.url}" target="_blank" class="button">
+                <a href="${url}" target="_blank" rel="noopener noreferrer" class="button">
                   Codigo
                 </a>
                 ${
-                  card.homepage != ""
+                  homepage != ""
                     ? `<a
-                  href="${card.homepage}"
+                  href="${homepage}"
                   target="_blank"
                   class="button"
+                  rel="noopener noreferrer"
                 >
                   Abrir </a
                 >`

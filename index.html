@@ -8,11 +8,11 @@
     <link rel="shortcut icon" href="./Images/logo.svg" />
     <link
       rel="preload"
-      href="./CSS/bootstrap.min.css"
+      href="./CSS/bootstrap.css"
       as="style"
       onload="this.onload=null;this.rel='stylesheet'"
     />
-    <link rel="stylesheet" href="./CSS/bootstrap.min.css" />
+    <link rel="stylesheet" href="./CSS/bootstrap.css" />
     <link
       rel="preload"
       href="./CSS/style.css"
@@ -20,9 +20,6 @@
       onload="this.onload=null;this.rel='stylesheet'"
     />
     <link rel="stylesheet" href="./CSS/style.css" />
-
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <link rel="preload" href="./JS/Projects.js" as="script" />
   </head>
   <body class="bg-white">
     <!-- Header -->
@@ -48,27 +45,19 @@
             <li class="nav-item">
               <a class="nav-link text-light" href="./about.html">Sobre mi</a>
             </li>
-            <li>
-              <div class="dropdown">
-                <a
-                  class="btn btn-dark dropdown-toggle"
-                  href="#"
-                  role="button"
-                  id="dropdownMenuLink"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
-                  Trabajo
-                </a>
-
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                  <a class="dropdown-item" href="./web_programmer.html">Web</a>
-                  <a class="dropdown-item" href="./game_programmer.html"
-                    >Videojuegos</a
-                  >
-                </div>
-              </div>
+            <li class="nav-item">
+              <a
+                class="nav-link text-light font-weight-bold"
+                href="./web_programmer.html"
+                >Web</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-light font-weight-bold"
+                href="./game_programmer.html"
+                >Videogames</a
+              >
             </li>
             <li class="nav-item">
               <a class="nav-link text-light" href="#footer-class">Contacto</a>
@@ -318,29 +307,6 @@
       </div>
     </footer>
     <script type="module" src="./JS/index.js"></script>
-    <script>
-      ScrollReveal().reveal(".navbar", {
-        duration: 1000,
-        origin: "top",
-        distance: "5px",
-      });
-      ScrollReveal().reveal(".tarjt-portafolio", {
-        duration: 1000,
-        origin: "bottom",
-        distance: "75px",
-        opacity: 0,
-      });
-      //Smooth Scroling
-      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-        anchor.addEventListener("click", function (e) {
-          e.preventDefault();
-
-          document.querySelector(this.getAttribute("href")).scrollIntoView({
-            behavior: "smooth",
-          });
-        });
-      });
-    </script>
     <script src="./JS/jquery-3.5.1.slim.min.js"></script>
     <script src="./JS/popper.min.js"></script>
     <script src="./JS/bootstrap.min.js"></script>

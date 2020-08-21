@@ -1,12 +1,33 @@
 const projects = [
   {
+    name: "Red Social FullStack MERN GraphQL",
+    url: "https://github.com/Marlos-Rodriguez/MERNG-Next-Comment-Front",
+    description:
+      "Aplicación FullStack hecha con el Stack MERN + GraphQL. Crear, borrar, comentar y dar like a Publicaciones.",
+    homepage: "https://serene-lamarr-885e86.netlify.app/",
+    img: "./Images/comment-app.webp",
+    imgalt: "Social NetWork App image",
+    technologies: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React",
+      "Next JS",
+      "Node JS",
+      "Express",
+      "MongoDB",
+      "GraphQL",
+      "Apollo",
+    ],
+  },
+  {
     name: "Aplicacion MERN de Proyectos",
     url: "https://github.com/Marlos-Rodriguez/MERN-Task-Cliente",
     description:
       "Aplicación Web de Administración de Proyectos y Tareas con Login y Signup de usuarios. Creado con el Stack MERN, React para el Frontend, Express y Node JS para el Backend y MongoDB para la base de Datos.",
     homepage: "https://silly-hoover-e3bf9c.netlify.app",
     img: "./Images/MERN-Task.webp",
-    imgalt: "MERN Appimage",
+    imgalt: "MERN App image",
     technologies: [
       "HTML",
       "CSS",
@@ -84,36 +105,6 @@ const projects = [
     img: "./Images/professional.webp",
     imgalt: "Profesional Website image",
     technologies: ["HTML", "CSS", "JavaScript"],
-  },
-  {
-    name: "Clon de Evernote con React",
-    url: "https://github.com/Marlos-Rodriguez/Evernote-Clone-React",
-    description:
-      "Aplicacion de notas y tareas al estilo de Evernote hecha con React JS y Firebase. Se puede agregar, eliminar y modificar notas alojadas en una base de datos de Firebase",
-    homepage: "https://marlos-rodriguez.github.io/Evernote-Clone-React/",
-    img: "./Images/Evernote-clone.webp",
-    imgalt: "Evernote Clon image",
-    technologies: ["HTML", "CSS", "JavaScript", "React", "Firebase"],
-  },
-  {
-    name: "Plataformas 2D",
-    url: "https://github.com/Marlos-Rodriguez/2D-Platform",
-    description:
-      "Videojuego 2D de Plataformas hecho con Unity3D. Un personaje principal con movimiento y salto, vida y monedas a recolectar. 2 enemigos clasicos que se mueven de lado a lado y una pequeña interfaz con contador de vida y Gemas.",
-    homepage: "",
-    img: "./Images/Fox-Platform.webp",
-    imgalt: "2D Platform Game image",
-    technologies: ["C#", "Unity"],
-  },
-  {
-    name: "Pagina de Producto con Bootstrap",
-    url: "https://github.com/Marlos-Rodriguez/Bootstrap-Curso",
-    description:
-      "Pagina web hecha con Bootstrap 4 y ScrollReveal JS para un producto electronico, en este ejemplo sobre un telefono.",
-    homepage: "https://marlos-rodriguez.github.io/Bootstrap-Curso/",
-    img: "./Images/bootstrap-Page.webp",
-    imgalt: "Bootstrap website image",
-    technologies: ["HTML", "Bootstrap"],
   },
 ];
 

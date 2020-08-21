@@ -6,7 +6,7 @@ document.getElementById("CSS").addEventListener("click", tecFilter);
 document.getElementById("JavaScript").addEventListener("click", tecFilter);
 document.getElementById("React").addEventListener("click", tecFilter);
 document.getElementById("MongoDB").addEventListener("click", tecFilter);
-document.getElementById("Bootstrap").addEventListener("click", tecFilter);
+document.getElementById("Node JS").addEventListener("click", tecFilter);
 
 window.sr = ScrollReveal();
 sr.reveal(".tarjt-portafolio");

@@ -24,14 +24,13 @@
   justify-content: center;
 }
 .div-container {
-  margin-left: 50px;
-  margin-right: 50px;
+  margin: 0;
 }
 
 .div-sub-tec {
   /*box-shadow: 1px 5px 10px gray;*/
   border-radius: 20px;
-  width: 12.9rem;
+  width: 10rem;
   margin-top: 0px;
   margin-left: 0%;
 }
@@ -43,14 +42,14 @@
 }
 
 .div-imagen-tec {
-  width: initial;
+  width: 100%;
   height: auto;
   text-align: center;
   align-items: center;
 }
 
 .div-imagen-tec img {
-  width: 30%;
+  width: 40%;
 }
 
 .div-imagen-tec img:hover {

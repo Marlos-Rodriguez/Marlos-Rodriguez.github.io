@@ -24,7 +24,7 @@ const projects = [
     name: "Aplicacion MERN de Proyectos",
     url: "https://github.com/Marlos-Rodriguez/MERN-Task-Cliente",
     description:
-      "Aplicación Web de Administración de Proyectos y Tareas con Login y Signup de usuarios. Creado con el Stack MERN, React para el Frontend, Express y Node JS para el Backend y MongoDB para la base de Datos.",
+      "Aplicación Web de Administración de Proyectos y Tareas con Login y Signup de usuarios. Creado con el Stack MERN.",
     homepage: "https://silly-hoover-e3bf9c.netlify.app",
     img: "./Images/MERN-Task.webp",
     imgalt: "MERN App image",
@@ -42,21 +42,21 @@ const projects = [
     name: "Mi Pagina Web",
     url: "https://github.com/Marlos-Rodriguez/Marlos-Rodriguez.github.io",
     description:
-      "Es la pagina en la que estan ahora, construida por mi mismo con JavaScript, CSS y Bootstrap 4, una pagina principal como presentacion y otras dos como paginas para mis trabajos como desarrollador Web y de Videojeugos.",
+      "Es la pagina en la que estan ahora, construida por mi mismo con HTML, CSS y Vanilla JavaScript como presentacion.",
     homepage: "https://marlos-rodriguez.github.io",
     img: "./Images/web-page.webp",
     imgalt: "Web page image",
-    technologies: ["HTML", "CSS", "JavaScript", "Bootstrap"],
+    technologies: ["HTML", "CSS", "JavaScript"],
   },
   {
     name: "Clon de Product Hunt",
     url: "https://github.com/Marlos-Rodriguez/Product-Hunt-Next-Firebase",
     description:
-      "Aplicación clon de Product Hunt con React/Next JS y Firebase. Login y SignUp con Firebase authentication y creación de productos con Firestore y firebase storage.",
+      "Aplicación clon de Product Hunt con React/Next JS y Firebase. Login y SignUp, crear, comentar y dar like a productos con Firebase.",
     homepage: "https://adoring-lewin-b7bac8.netlify.app",
     img: "./Images/producthunt.webp",
     imgalt: "Product Hunt image",
-    technologies: ["HTML", "CSS", "JavaScript", "React", "Next", "Firebase"],
+    technologies: ["HTML", "CSS", "JavaScript", "React", "Next JS", "Firebase"],
   },
   {
     name: "Pagina Web de Hotel con Gatsby",

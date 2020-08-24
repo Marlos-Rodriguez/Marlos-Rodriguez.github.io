@@ -8,9 +8,6 @@ document.getElementById("React").addEventListener("click", tecFilter);
 document.getElementById("MongoDB").addEventListener("click", tecFilter);
 document.getElementById("Node JS").addEventListener("click", tecFilter);
 
-window.sr = ScrollReveal();
-sr.reveal(".tarjt-portafolio");
-
 function tecFilter() {
   PrinftData(this.id);
 }
@@ -25,12 +22,6 @@ function PrinftData(tecFilter) {
     let tecsFilter = card.technologies.filter((tec) => tec == tecFilter);
     if (tecsFilter != "") {
       GetCard(card);
-      sr.reveal(".tarjt-portafolio", {
-        duration: 1000,
-        origin: "bottom",
-        distance: "200px",
-        opacity: 0,
-      });
     }
   });
 }

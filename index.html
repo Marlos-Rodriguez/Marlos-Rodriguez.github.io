@@ -14,6 +14,18 @@
     />
     <link rel="stylesheet" href="./CSS/style.css" />
     <link rel="preload" href="./JS/index.js" as="script" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158183591-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-158183591-1");
+    </script>
   </head>
   <body class="bg-white">
     <!-- Header -->
@@ -24,12 +36,8 @@
           <p for="logo" class="nav-label">Marlos Rodriguez</p>
         </div>
         <div class="nav-buttons">
-          <a class="projects-button" href="#card">
-            Projects
-          </a>
-          <a class="contact-button-nav" href="#curriculum">
-            Contact
-          </a>
+          <a class="projects-button" href="#card"> Projects </a>
+          <a class="contact-button-nav" href="#curriculum"> Contact </a>
         </div>
       </nav>
     </header>
@@ -38,17 +46,11 @@
 
     <main role="main">
       <div class="contenedor">
-        <div class="titulo-principal" alt="Web Programmer illustration">
-          Programador Web
-        </div>
+        <div class="titulo-principal" alt="Web Programmer illustration">Programador Web</div>
         <div class="descripcion">
-          Experiencia con HTML, CSS, JavaScript, React JS, Bootstrap, Node JS,
-          Firebase y MongoDB.
+          Experiencia con HTML, CSS, JavaScript, React JS, Bootstrap, Node JS, Firebase y MongoDB.
         </div>
-        <img
-          src="./Images/web_cover.svg"
-          alt="Videogame Programmer illustration"
-        />
+        <img src="./Images/web_cover.svg" alt="Videogame Programmer illustration" />
       </div>
 
       <section class="seccion-tecnologias">
@@ -58,9 +60,7 @@
             <div class="div-sub-tec">
               <div class="div-tec">
                 <div class="div-imagen-tec" href="#card">
-                  <a href="#card"
-                    ><img src="./Images/HTML.svg" id="HTML" alt="HTML icon"
-                  /></a>
+                  <a href="#card"><img src="./Images/HTML.svg" id="HTML" alt="HTML icon" /></a>
                 </div>
                 <div class="div-tit" id="div-tit">
                   <h3>HTML</h3>
@@ -75,7 +75,7 @@
                     <img
                       src="./Images/CSS.svg"
                       id="CSS"
-                      style="height: 70px;"
+                      style="height: 70px"
                       href="#seccion-portafolio"
                       alt="CSS icon"
                     />
@@ -171,10 +171,10 @@
     <hr class="my-0 featurette-divider" />
     <!-- Footer -->
     <footer id="footer-class">
-      <div style="margin-left: 2rem;">
+      <div style="margin-left: 2rem">
         <div class="col-md-3">
           <!-- Contacto -->
-          <h4 style="font-size: 1.3rem; margin: 0.5rem 0;">Contacto:</h4>
+          <p style="font-size: 1.6rem; margin: 0.5rem 0; font-weight: bold">Contacto:</p>
           <div class="contenedor-contact">
             <div>
               <a

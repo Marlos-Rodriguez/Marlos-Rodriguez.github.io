@@ -28,15 +28,7 @@ const projects = [
     homepage: "https://silly-hoover-e3bf9c.netlify.app",
     img: "./Images/MERN-Task.webp",
     imgalt: "MERN App image",
-    technologies: [
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "React",
-      "Node JS",
-      "Express",
-      "MongoDB",
-    ],
+    technologies: ["HTML", "CSS", "JavaScript", "React", "Node JS", "Express", "MongoDB"],
   },
   {
     name: "Mi Pagina Web",
@@ -77,6 +69,15 @@ const projects = [
     img: "./Images/CrudRedux.webp",
     imgalt: "CRUD Redux image",
     technologies: ["HTML", "CSS", "JavaScript", "React", "Redux"],
+  },
+  {
+    name: "Aplicacion de To-dos con Django",
+    url: "https://github.com/Marlos-Rodriguez/Todo-App-Django-PostgreSQL",
+    description: "Aplicacion de To-dos. Creado con Django y PostgreSQL y Bootstrap",
+    homepage: "https://obscure-scrubland-52389.herokuapp.com",
+    img: "./Images/todo-django.webp",
+    imgalt: "Todo Django image",
+    technologies: ["HTML", "CSS", "Python", "Django", "PostgreSQL"],
   },
   {
     name: "Aplicacion de Peliculas con React",

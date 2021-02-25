@@ -50,12 +50,13 @@ body {
 .main-nav .nav-buttons {
   width: 80%;
   display: flex;
-  align-items: center;
+  justify-content: right;
+  justify-items: right;
 }
 
 .main-nav .nav-buttons .projects-button {
   margin: 0 1rem;
-  margin-left: auto;
+  margin-top: 0.1rem;
   color: #f1f6f9;
   border: none;
   font-size: 1.1rem;
@@ -63,7 +64,7 @@ body {
 
 .main-nav .nav-buttons .contact-button-nav {
   margin: 0 0.5rem;
-  margin-right: 6rem;
+  margin-right: 5rem;
   padding: 0.2rem 0.8rem;
   border-radius: 12px;
   font-size: 1.1rem;
@@ -246,7 +247,7 @@ body {
   margin-top: 10px;
   font-size: 110%;
   font-weight: bold;
-  color: #14274e;
+  color: #18105c;
   margin-bottom: 50px;
 }
 

@@ -1,12 +1,12 @@
 import { projects } from "./Projects.js";
 
 let portafolio = document.getElementById("card");
-document.getElementById("HTML").addEventListener("click", tecFilter);
-document.getElementById("CSS").addEventListener("click", tecFilter);
 document.getElementById("JavaScript").addEventListener("click", tecFilter);
-document.getElementById("React").addEventListener("click", tecFilter);
-document.getElementById("MongoDB").addEventListener("click", tecFilter);
 document.getElementById("Node JS").addEventListener("click", tecFilter);
+document.getElementById("Go").addEventListener("click", tecFilter);
+document.getElementById("GraphQL").addEventListener("click", tecFilter);
+document.getElementById("Django").addEventListener("click", tecFilter);
+document.getElementById("React").addEventListener("click", tecFilter);
 
 function tecFilter() {
   PrinftData(this.id);

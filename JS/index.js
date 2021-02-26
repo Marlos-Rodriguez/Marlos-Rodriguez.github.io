@@ -46,7 +46,7 @@ function GetCard(card) {
               <br />
               <section class="button-containers">
                 <a href="${url}" target="_blank" rel="noopener noreferrer" class="button">
-                  Codigo
+                  Code
                 </a>
                 ${
                   homepage != ""
@@ -56,7 +56,7 @@ function GetCard(card) {
                   class="button"
                   rel="noopener noreferrer"
                 >
-                  Abrir </a
+                  Open </a
                 >`
                     : ""
                 }

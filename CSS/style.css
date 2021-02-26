@@ -84,7 +84,7 @@ body {
 .titulo {
   text-align: center;
   margin-left: 10px;
-  margin-top: 30px;
+  margin-top: 10px;
   font-size: 40px;
   font-weight: bolder;
   font-weight: 700;
@@ -314,17 +314,16 @@ body {
 .descripcion {
   position: absolute;
   text-align: left;
-  top: 50%;
-  left: 28%;
+  top: 56%;
+  left: 25%;
   transform: translate(-40%, -40%);
-  font-size: 3vw;
+  font-size: 2.5vw;
   width: 100%;
   max-width: 470px;
   color: #111111;
 }
 
 .contenedor img {
-  max-height: 650px;
   min-height: 230px;
 }
 
@@ -363,8 +362,37 @@ body {
 @media (min-width: 1100px) {
   .descripcion {
     font-size: 2vw;
+    max-width: 500px;
+    left: 26%;
+  }
+}
+
+@media (min-width: 1230px) {
+  .descripcion {
+    left: 24%;
+  }
+}
+
+@media (min-width: 1230px) {
+  .descripcion {
+    max-width: 550px;
+    top: 53%;
+    left: 24%;
+  }
+}
+@media (min-width: 1565px) {
+  .descripcion {
+    max-width: 730px;
+    left: 26%;
+  }
+  .titulo-principal {
+    position: absolute;
+    top: 35%;
+    left: 23.5%;
+    transform: translate(-40%, -40%);
     max-width: 650px;
-    left: 28%;
+    font-size: 4vw;
+    color: #14274e;
   }
 }
 
@@ -427,8 +455,9 @@ body {
 @media (max-width: 600px) {
   .descripcion {
     font-size: 3vw;
-    max-width: 300px;
-    left: 30%;
+    max-width: 220px;
+    left: 23%;
+    top: 60%;
   }
   .titulo-principal {
     max-width: 300px;
@@ -438,9 +467,9 @@ body {
 @media (max-width: 400px) {
   .descripcion {
     font-size: 3.5vw;
-    max-width: 200px;
-    top: 55%;
-    left: 25%;
+    max-width: 150px;
+    top: 70%;
+    left: 18%;
   }
   .titulo-principal {
     top: 38%;
@@ -452,12 +481,19 @@ body {
     width: 300px;
   }
 }
+
+@media (max-width: 370px) {
+  .descripcion {
+    top: 58%;
+    left: 21%;
+  }
+}
 @media (max-width: 330px) {
   .descripcion {
     font-size: 3.5vw;
-    max-width: 200px;
-    top: 60%;
-    left: 25%;
+    max-width: 150px;
+    top: 58%;
+    left: 21%;
   }
   .titulo-principal {
     top: 38%;

@@ -5,7 +5,7 @@ const projects = [
     description:
       "FullStack application made with MERN Stack + GraphQL. Create, delete, comment and like posts.",
     homepage: "https://serene-lamarr-885e86.netlify.app/",
-    img: "./Images/comment-app.avif",
+    img: "./Images/comment-app.webp",
     imgalt: "Social NetWork App image",
     technologies: [
       "HTML",
@@ -26,7 +26,7 @@ const projects = [
     description:
       "Golang project base in microservices architecture with PostgreSQL/gorm for DB and Redis for Cache. With gRPC for communication between service.",
     homepage: "https://www.notion.so/FullStack-Virtual-Wallet-5ad68765804e46c8816110f333ddefd1",
-    img: "./Images/virtual_wallet.avif",
+    img: "./Images/virtual_wallet.webp",
     imgalt: "Virtual Wallet App image",
     technologies: [
       "Go",
@@ -44,7 +44,7 @@ const projects = [
     url: "https://github.com/Marlos-Rodriguez/Twitter-Clon-Back",
     description: "Twitter Clon Back-end made with GO and MongoDB.",
     homepage: "https://twittergoclon.herokuapp.com/",
-    img: "./Images/twitter_clon.avif",
+    img: "./Images/twitter_clon.webp",
     imgalt: "Twitter Clon App image",
     technologies: ["Go", "Docker", "MongoDB"],
   },
@@ -54,7 +54,7 @@ const projects = [
     description:
       "Project and Task Management Web Application with User Login and Signup. Created with the MERN Stack.",
     homepage: "https://silly-hoover-e3bf9c.netlify.app",
-    img: "./Images/MERN-Task.avif",
+    img: "./Images/MERN-Task.webp",
     imgalt: "MERN App image",
     technologies: ["HTML", "CSS", "JavaScript", "React", "Node JS", "Express", "MongoDB"],
   },
@@ -64,7 +64,7 @@ const projects = [
     description:
       "This is the page they are on now, built by myself with HTML, CSS and Vanilla JavaScript as presentation.",
     homepage: "https://marlos-rodriguez.github.io",
-    img: "./Images/web-page.avif",
+    img: "./Images/web-page.webp",
     imgalt: "Web page image",
     technologies: ["HTML", "CSS", "JavaScript"],
   },
@@ -74,7 +74,7 @@ const projects = [
     description:
       "This is the page they are on now, built by myself with HTML, CSS and Vanilla JavaScript as presentation.",
     homepage: "https://adoring-lewin-b7bac8.netlify.app",
-    img: "./Images/producthunt.avif",
+    img: "./Images/producthunt.webp",
     imgalt: "Product Hunt image",
     technologies: ["HTML", "CSS", "JavaScript", "React", "Next JS", "Firebase"],
   },
@@ -84,7 +84,7 @@ const projects = [
     description:
       "Hotel website created with React / Gatsby, Styled Components and Dato CMS with GraphQL",
     homepage: "https://pedantic-wilson-8d21bd.netlify.app/",
-    img: "./Images/hotelgatsby.avif",
+    img: "./Images/hotelgatsby.webp",
     imgalt: "Gatsby Hotel website image",
     technologies: ["HTML", "CSS", "JavaScript", "React", "Gatsby", "GraphQL"],
   },
@@ -94,7 +94,7 @@ const projects = [
     description:
       "Product management application with name and price. Created with React using Redux and React Hooks. With the ability to add a new product, Edit and Delete it.",
     homepage: "https://marlos-rodriguez.github.io/Crud-Redux/#/",
-    img: "./Images/CrudRedux.avif",
+    img: "./Images/CrudRedux.webp",
     imgalt: "CRUD Redux image",
     technologies: ["HTML", "CSS", "JavaScript", "React", "Redux"],
   },
@@ -103,7 +103,7 @@ const projects = [
     url: "https://github.com/Marlos-Rodriguez/Todo-App-Django-PostgreSQL",
     description: "To-dos application. Created with Django and PostgreSQL and Bootstrap.",
     homepage: "https://obscure-scrubland-52389.herokuapp.com",
-    img: "./Images/todo-django.avif",
+    img: "./Images/todo-django.webp",
     imgalt: "Todo Django image",
     technologies: ["HTML", "CSS", "Python", "Django", "PostgreSQL"],
   },
